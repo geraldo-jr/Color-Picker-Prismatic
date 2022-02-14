@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prismatic Color Picker App - By Geraldo Pereira Junior</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header class="content">
+    <h1>Welcome to the Prismatic Color Picker</h1>
+    <h2>The tool that will help you new graphic designer to learn more about colors.</h2>
+    <nav class="nav">
+      <ul>
+        <li><a href="https://github.com/geraldo-jr/Color-Picker-Prismatic.git" target="_blank">Check the GitHub Repository for this project</a></li>
+        <li><a href="https://www.pivotaltracker.com/n/projects/2554102" target="_blank">Click here to follow the agile project plan on Pivotal Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <br>
+    <br>
+    <blockquote class="content">"<i>Since the 1800s combinations of red, green, and blue lights have often been used in psychology experiments to mix colors, and the proportional weights of those primary lights have been used to represent the colors as a triangle, often called a Maxwell Color Triangle.</i>" - PETER SHIRLEY & DAVID HART</blockquote>
+
+    <br>
+    <section class="content" id="explanation">
+      <p>Use the tool below to convert RGB to ρ, ɣ, and β values and have the proportional weight of the primary lights.</p>
+    </section>
+
+    <section class="content" id="converter">
+
+      <div class="hueValues">
+
+        <div class="rgbInputValues">
+
+            <label for="R">R:</label>
+            <input type="number" name="R" value="0" id="R" min="0.0" max="1.0" step="0.01" onchange="checkInput(value, id)">
+
+            <label for="G">G:</label>
+            <input type="number" name="G" value="0" id="G" min="0.0" max="1.0" step="0.01" onchange="checkInput(value, id)">
+          
+            <label for="B">B:</label>
+            <input type="number" name="B" value="0" id="B" min="0.0" max="1.0" step="0.01" onchange="checkInput(value, id)">
+
+        </div>
+        <label for="colorSquare">Color:</label>
+        <div class="colorSquare" id="colorSquare">
+          <div id="colorPicked"></div>
+        </div>
+
+        
+
+        <div class="maxwellValues">
+          <br>
+          
+          <input type="button" name="Convert" value="Convert to Maxwell Values" id="clickConvert" onclick="convertRGBtoMaxwell()">
+          <p>Values in Barycentric Maxwell are:           <span id="maxwellResult">(0.0, 0.0, 0.0, 0)</span></p>
+        </div>
+
+        
+      </div>
+
+      
+    </section>
+  </main>
+  
+  <script src="js/maxwellPrism.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  margin: 2.1em;
+}
+
+nav, section#explanation  {
+  text-align: left;
+}
+
+.hueValues {
+  position: relative;
+}
+
+.content {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+
+.rgbInputValues {
+  float: left;
+  width: 50%;
+}
+
+.inputs {
+  /* border: 1px solid green; */
+  float: left;
+  width: 9.83rem;
+  height: 32%;
+}
+
+input[type="number"] {
+  width: 3em;
+}
+
+
+.maxwellValues {
+  clear: left;
+  width: 40%;
+}
+
+.colorSquare {
+  border: 1px solid blue;
+  width: 49%;
+  float: right;
+  height: 7.7rem;
+  background-color: rgb(255, 255, 255);
+}
